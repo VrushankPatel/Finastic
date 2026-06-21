@@ -1,66 +1,12 @@
 {
   "hosting": {
-    "site": "finastic-x",
     "public": "dist/client",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "headers": [
-      {
-        "source": "/assets/**",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
-      }
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "/profile",
-        "destination": "/profile/index.html"
-      },
-      {
-        "source": "/inputs",
-        "destination": "/inputs/index.html"
-      },
-      {
-        "source": "/portfolio",
-        "destination": "/portfolio/index.html"
-      },
-      {
-        "source": "/monte-carlo",
-        "destination": "/monte-carlo/index.html"
-      },
-      {
-        "source": "/insights",
-        "destination": "/insights/index.html"
-      },
-      {
-        "source": "/scenarios",
-        "destination": "/scenarios/index.html"
-      },
-      {
-        "source": "/withdrawal",
-        "destination": "/withdrawal/index.html"
-      },
-      {
-        "source": "/risk",
-        "destination": "/risk/index.html"
-      },
-      {
-        "source": "/timeline",
-        "destination": "/timeline/index.html"
-      },
-      {
-        "source": "/data",
-        "destination": "/data/index.html"
-      },
-      {
-        "source": "/settings",
-        "destination": "/settings/index.html"
-      },
       {
         "source": "**",
         "destination": "/index.html"
